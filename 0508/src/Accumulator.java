@@ -1,21 +1,21 @@
 
 public class Accumulator {
 
-	static int sum;
+	 int sum;
 	
-	static void add(int num){
+	 void add(int num){
 		sum += num;
 	}
-	static void showResult(){
+	 void showResult(){
 		System.out.println("sum = "+sum);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Accumulator ac = new Accumulator();
 		for(int i = 0; i < 10; i++)
-			Accumulator.add(i);
-		Accumulator.showResult();
+			ac.add(i);
+		ac.showResult();
 	}
 
 }
